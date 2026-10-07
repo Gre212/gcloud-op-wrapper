@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
-INSTALL_DIR="${HOME}/.config/gcloud-1password"
+INSTALL_DIR="${HOME}/.config/gcloud-op-wrapper"
 ZSHRC="${HOME}/.zshrc"
 
-echo "=> Installing gcloud-wrapper to ${INSTALL_DIR}..."
+echo "=> Installing gcloud-op-wrapper to ${INSTALL_DIR}..."
 
 # ディレクトリの作成
 mkdir -m 700 -p "$INSTALL_DIR"
@@ -23,7 +23,7 @@ fi
 SOURCE_LINE="source ${INSTALL_DIR}/gcloud-op.zsh"
 if ! grep -qF "$SOURCE_LINE" "$ZSHRC" 2>/dev/null; then
     echo "=> Adding source command to ${ZSHRC}..."
-    echo -e "\n# gcloud-wrapper\n$SOURCE_LINE" >> "$ZSHRC"
+    echo -e "\n# gcloud-op-wrapper\n$SOURCE_LINE" >> "$ZSHRC"
 else
     echo "=> Source command already exists in ${ZSHRC}."
 fi

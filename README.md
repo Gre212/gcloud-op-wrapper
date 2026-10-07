@@ -19,7 +19,7 @@ gcloud-op.zsh   zsh 関数群（~/.zshrc から source する）
 mint.py         1Password の ADC JSON → access token 発行（gcloud-op.zsh から呼ばれる）
 ```
 
-実際の配置先は `~/.config/gcloud-1password/` です。
+実際の配置先は `~/.config/gcloud-op-wrapper/` です。
 
 ## セットアップ
 
@@ -34,8 +34,8 @@ mint.py         1Password の ADC JSON → access token 発行（gcloud-op.zsh �
 リポジトリをクローンまたはダウンロードし、ディレクトリ内でインストールスクリプトを実行します。
 
 ```zsh
-git clone https://github.com/Gre212/gcloud-1p-wrapper.git
-cd gcloud-1p-wrapper
+git clone https://github.com/Gre212/gcloud-op-wrapper.git
+cd gcloud-op-wrapper
 ./install.sh
 ```
 
